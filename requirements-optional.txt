@@ -1,0 +1,11 @@
+# Dépendances optionnelles — installer uniquement si besoin.
+#
+# Mode "LOCAL NLP+" (embeddings sémantiques locaux) :
+#   pip install -r requirements-optional.txt
+# Augmente significativement la taille d'installation (torch).
+# Peut dépasser le quota mémoire de Streamlit Community Cloud (free tier).
+sentence-transformers>=3.0
+
+# Découpage de phrases plus précis (sinon fallback regex automatique) :
+spacy>=3.7
+https://github.com/explosion/spacy-models/releases/download/fr_core_news_sm-3.7.0/fr_core_news_sm-3.7.0-py3-none-any.whl
